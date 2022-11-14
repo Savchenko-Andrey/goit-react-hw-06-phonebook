@@ -1,21 +1,16 @@
-import { Box } from 'commonStyle/Common.styled';
-import { Formes } from './FormSection/Form';
-import { Filter } from './FilterSection/Filter';
-import { Renderlist } from './ListContact/ListContact';
-import { ContactList } from './ListContact/ListContact.styled';
-
-export const Phonebook = () => {
+export const App = () => {
   return (
-    <>
-      <Box display="flex" flexDirection="column" alignItems="center" p={8}>
-        <h1>Phonebook</h1>
-        <Formes />
-        <h2>Contacts</h2>
-        <Filter />
-        <ContactList>
-          <Renderlist />
-        </ContactList>
-      </Box>
-    </>
+    <div
+      style={{
+        height: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: 40,
+        color: '#010101'
+      }}
+    >
+      React homework template
+    </div>
   );
 };
